@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="description-section">
+        <div class="card-title">
+          Get <span>insights</span> that help your business grow.
+        </div>
+        <div class="card-body">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </div>
+        <div class="card-statistics">
+          <div class="statistic-value">10k+</div>
+          <div class="statistic-name">companies</div>
+
+          <div class="statistic-value">314</div>
+          <div class="statistic-name">templates</div>
+          <div class="statistic-value">12m+</div>
+          <div class="statistic-name">queries</div>
+        </div>
+      </div>
+      <div class="image-section">
+        <picture>
+          <source
+            media="(min-width:450px)"
+            srcset="./images/image-header-desktop.jpg"
+          />
+          <img
+            src="./images/image-header-mobile.jpg"
+            alt=""
+            style="width: 100%; object-fit: cover"
+          />
+        </picture>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.instagram.com/munsif_ali_taj">Munsif Ali</a>.
+    </div>
+  </body>
+</html>
