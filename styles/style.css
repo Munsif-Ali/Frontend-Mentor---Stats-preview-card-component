@@ -100,7 +100,8 @@ picture::after {
     top: 0;
     left: 0;
     background-color: var(--Soft-violet);
-    mix-blend-mode: color;
+    opacity: 0.75;
+    mix-blend-mode: multiply;
 }
 
 a {
