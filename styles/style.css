@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
-/* font-family: 'Inter', sans-serif;
-font-family: 'Lexend Deca', sans-serif; */
 :root {
     --Very-dark-blue: hsl(233, 47%, 7%);
     --Dark-desaturated-blue: hsl(244, 38%, 16%);
@@ -31,6 +29,9 @@ body {
     background-color: var(--Very-dark-blue);
     font-weight: 400;
     color: var(--White);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .card {
@@ -44,18 +45,46 @@ body {
 }
 
 
+.card-title {
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 3rem;
+}
 
 .card .description-section {
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .description-section .card-title {
-    font-size: 2rem;
     font-weight: 700;
 }
 
 .description-section .card-title span {
     color: var(--Soft-violet);
+}
+
+.card-statistics {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.card-statistics>*>*:nth-child(1) {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.card-statistics>*>*:nth-child(2) {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
 }
 
 .image-section {
@@ -72,4 +101,43 @@ picture::after {
     left: 0;
     background-color: var(--Soft-violet);
     mix-blend-mode: color;
+}
+
+a {
+    color: var(--Soft-violet);
+}
+
+@media screen and (max-width:600px) {
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 90vh;
+    }
+
+    .card>*:nth-child(1) {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .card-body {
+        margin-bottom: 1rem;
+    }
+
+    * {
+        text-align: center;
+    }
+
+    .card-statistics {
+        flex-direction: column;
+        justify-content: space-around;
+        flex: 1;
+    }
+
+    .image-section {
+        height: 40%;
+    }
+
 }
