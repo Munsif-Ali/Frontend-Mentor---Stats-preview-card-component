@@ -88,11 +88,17 @@ body {
 }
 
 .image-section {
-    position: relative;
+    /* position: relative; */
+    background-color: var(--Soft-violet);
+}
+
+.image-section img {
+    mix-blend-mode: multiply;
+    opacity: 0.8;
 }
 
 
-picture::after {
+/* picture::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -102,7 +108,7 @@ picture::after {
     background-color: var(--Soft-violet);
     opacity: 0.75;
     mix-blend-mode: multiply;
-}
+} */
 
 a {
     color: var(--Soft-violet);
